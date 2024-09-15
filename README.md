@@ -4,7 +4,7 @@ UrbanFloodCastV1 is the first version repository for Inno_Maus project. This rep
 
 ## Table of Contents
 - [Overview](#overview)
-- [Rainfall Input Data](#rainfall-input-data)
+- [Data pixelization](#data-pixelization)
 - [Model Training](#model-training)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -13,7 +13,7 @@ UrbanFloodCastV1 is the first version repository for Inno_Maus project. This rep
 ## Overview
 UrbanFloodCastV1 leverages deep learning techniques to forecast urban flooding based on hydrology data. The project uses a variety of libraries and tools for data preprocessing, model building, and visualization.
 
-## Rainfall Input Data
+## Data pixelization
 The pixelized data required for model training and evaluation can be downloaded from the following link:
 
 [Pixelized Data](https://syncandshare.lrz.de/getlink/fi8DyhtffyaeNgMR8u7dh8/output)
@@ -38,6 +38,6 @@ To set up the project locally, follow these steps:
 ## Usage
 To train the model, execute the following steps:
 
-1. **Process the rainfall input data by running the process.ipynb notebook.**
+1. **Process the rainfall input data by running the `process.ipynb` notebook.**
    
-2. **Train the model using the mainfile.ipynb notebook.**
+2. **Train the model using the `mainfile.ipynb` notebook.**
