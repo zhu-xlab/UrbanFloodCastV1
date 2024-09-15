@@ -8,4 +8,4 @@ Data processing script can be found in 'data/process.ipynb'
 
 ### Model trianing
 
-Script can be found in Model/mainfile.ipynb
+Script can be found in mainfile.ipynb
