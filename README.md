@@ -28,7 +28,7 @@ To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/YourUsername/UrbanFloodCastV1.git
+   git clone https://github.com/zhu-xlab/UrbanFloodCastV1.git
    cd UrbanFloodCastV1
 
 2. **Install the required dependencies: You can install all the required libraries using the `requirements.txt` file:**:
