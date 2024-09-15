@@ -9,3 +9,19 @@ Data processing script can be found in 'data/process.ipynb'
 ## Model trianing
 
 Script can be found in 'mainfile.ipynb'
+
+## Required libary
+
+argparse
+numpy
+torch
+matplotlib
+scipy
+tifffile
+Pillow
+pyMesh
+imageio
+tqdm
+torchvision  
+
+
