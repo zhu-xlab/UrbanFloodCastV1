@@ -38,6 +38,6 @@ To set up the project locally, follow these steps:
 ## Usage
 To train the model, execute the following steps:
 
-1. **Process the rainfall input data by running the `process.ipynb` notebook.**
+1. **Process the runoff / ground truth input data by running the `process.ipynb` notebook. This can help downsample the images.**
    
 2. **Train the model using the `mainfile.ipynb` notebook.**
