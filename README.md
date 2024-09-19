@@ -41,3 +41,5 @@ To train the model, execute the following steps:
 1. **Process the runoff / ground truth input data by running the `process.ipynb` notebook. This can help downsample the images.**
    
 2. **Train the model using the `mainfile.ipynb` notebook.**
+
+3. **[Checkpoints] (https://syncandshare.lrz.de/getlink/fiPWiw7f7nsxXXPBWVN7g/checkpoints)
