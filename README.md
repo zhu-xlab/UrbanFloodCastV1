@@ -42,4 +42,4 @@ To train the model, execute the following steps:
    
 2. **Train the model using the `mainfile.ipynb` notebook.**
 
-3. **[Checkpoints] (https://syncandshare.lrz.de/getlink/fiPWiw7f7nsxXXPBWVN7g/checkpoints)
+3. [Checkpoints] (https://syncandshare.lrz.de/getlink/fiPWiw7f7nsxXXPBWVN7g/checkpoints)
