@@ -40,7 +40,7 @@ To train the model, execute the following steps:
    
 1. **Process the runoff / ground truth data by running the `downsample.ipynb` notebook. This can help downsample the images.**
    
-2. **Put the test ground truth folder to 'data/val'. Test the model using the `load_model.ipynb` notebook.**
+2. **Put the test ground truth events folder to 'data/val'. Test the model using the `load_model.ipynb` notebook.**
 
-3. **Please change all the root to your local path.**
+3. **Please change the 'Root_path' to your local path.**
 
