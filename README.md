@@ -18,10 +18,10 @@ The pixelized data required for model training and evaluation can be downloaded 
 
 [Pixelized Data](https://syncandshare.lrz.de/getlink/fi8DyhtffyaeNgMR8u7dh8/output)
 
-To get this data, you can process the data using the script provided in `data/process.ipynb`.
+To get this data, you can process the data using the script provided in `data/process.ipynb`. This can help convert .txt to .tif files.
 
 ## Model Training
-To train the flood model, refer to the Jupyter notebook `mainfile.ipynb`. 
+We prepared the pre-trained model checkpoints: [Checkpoints](https://syncandshare.lrz.de/getlink/fiPWiw7f7nsxXXPBWVN7g/checkpoints)
 
 ## Installation
 To set up the project locally, follow these steps:
@@ -37,9 +37,10 @@ To set up the project locally, follow these steps:
 
 ## Usage
 To train the model, execute the following steps:
-
-1. **Process the runoff / ground truth input data by running the `process.ipynb` notebook. This can help downsample the images.**
    
-2. **Train the model using the `mainfile.ipynb` notebook.**
+1. **Process the runoff / ground truth data by running the `downsample.ipynb` notebook. This can help downsample the images.**
+   
+2. **Put the test ground truth folder to 'data/val'. Test the model using the `load_model.ipynb` notebook.**
 
-3. [Checkpoints] (https://syncandshare.lrz.de/getlink/fiPWiw7f7nsxXXPBWVN7g/checkpoints)
+3. **Please change all the root to your local path.**
+
