@@ -38,7 +38,7 @@ To set up the project locally, follow these steps:
 ## Usage
 To train the model, execute the following steps:
    
-1. **Process the runoff / ground truth data by running the `downsample.ipynb` notebook. This can help downsample the images. Downsampled runoff is [here](https://syncandshare.lrz.de/getlink/fiP9XQoFCsWhhva2pwyWmr/runoff)**
+1. **Process the runoff / ground truth data by running the `downsample.ipynb` notebook. This can help downsample the images. Downsampled runoff is [here](https://syncandshare.lrz.de/getlink/fiP9XQoFCsWhhva2pwyWmr/runoff).**
    
 2. **Put the test ground truth events folder to 'data/val'. Test the model using the `load_model.ipynb` notebook.**
 
