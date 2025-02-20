@@ -16,7 +16,7 @@ UrbanFloodCastV2 leverages deep learning techniques to forecast urban flooding b
 ## Data pixelization
 The pixelized data required for model training and evaluation can be downloaded from test_data folder in the following link:
 
-[Pixelized Data]([https://syncandshare.lrz.de/getlink/fiPWiw7f7nsxXXPBWVN7g/checkpoints])
+[Pixelized Data](https://syncandshare.lrz.de/getlink/fiPWiw7f7nsxXXPBWVN7g/checkpoints)
 
 To get this data, you can process the data using the script provided in `process.ipynb`. This can help convert .txt to .tif files. Besides, `save_pt.ipynb` can help convert .tif to .pt files.
 
