@@ -14,9 +14,9 @@ UrbanFloodCastV2 is the second version repository for Inno_Maus project. This re
 UrbanFloodCastV2 leverages deep learning techniques to forecast urban flooding based on hydrology data. The project uses a variety of libraries and tools for data preprocessing, model building, and visualization.
 
 ## Data pixelization
-The pixelized data required for model training and evaluation can be downloaded from the following link:
+The pixelized data required for model training and evaluation can be downloaded from test_data folder in the following link:
 
-[Pixelized Data](https://syncandshare.lrz.de/getlink/fi8DyhtffyaeNgMR8u7dh8/output)
+[Pixelized Data]([https://syncandshare.lrz.de/getlink/fiPWiw7f7nsxXXPBWVN7g/checkpoints])
 
 To get this data, you can process the data using the script provided in `process.ipynb`. This can help convert .txt to .tif files. Besides, `save_pt.ipynb` can help convert .tif to .pt files.
 
