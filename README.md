@@ -1,6 +1,6 @@
-# UrbanFloodCastV1
+# UrbanFloodCastV2
 
-UrbanFloodCastV1 is the first version repository for Inno_Maus project. This repository contains the necessary scripts for data processing, model training, and the required dependencies to run the project.
+UrbanFloodCastV2 is the second version repository for Inno_Maus project. This repository contains the necessary scripts for data processing, model training, and the required dependencies to run the project.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -11,17 +11,17 @@ UrbanFloodCastV1 is the first version repository for Inno_Maus project. This rep
 
 
 ## Overview
-UrbanFloodCastV1 leverages deep learning techniques to forecast urban flooding based on hydrology data. The project uses a variety of libraries and tools for data preprocessing, model building, and visualization.
+UrbanFloodCastV2 leverages deep learning techniques to forecast urban flooding based on hydrology data. The project uses a variety of libraries and tools for data preprocessing, model building, and visualization.
 
 ## Data pixelization
 The pixelized data required for model training and evaluation can be downloaded from the following link:
 
 [Pixelized Data](https://syncandshare.lrz.de/getlink/fi8DyhtffyaeNgMR8u7dh8/output)
 
-To get this data, you can process the data using the script provided in `data/process.ipynb`. This can help convert .txt to .tif files.
+To get this data, you can process the data using the script provided in `process.ipynb`. This can help convert .txt to .tif files. Besides, `save_pt.ipynb` can help convert .tif to .pt files.
 
 ## Model Training
-We prepared the pre-trained model checkpoints: [Checkpoints](https://syncandshare.lrz.de/getlink/fiPWiw7f7nsxXXPBWVN7g/checkpoints)
+We prepared the pre-trained model checkpoints: [Checkpoints](https://syncandshare.lrz.de/getlink/fiPWiw7f7nsxXXPBWVN7g/checkpoints) Please download model.pt and put in the `save` folder.
 
 ## Installation
 To set up the project locally, follow these steps:
@@ -38,9 +38,9 @@ To set up the project locally, follow these steps:
 ## Usage
 To use the model, execute the following steps:
    
-1. **Process the runoff / ground truth data by running the `downsample.ipynb` notebook. This can help downsample the images. Downsampled runoff is [here](https://syncandshare.lrz.de/getlink/fiP9XQoFCsWhhva2pwyWmr/runoff).**
+1. **Download DEM and .pt test data and put in the corresponding folder. **
    
-2. **Please change the 'Root_path' to your local path.**
+2. **Please change all the path to your local path in `load_model.ipynb`.**
 
-3. **Put the test ground truth events folder to 'data/val'. Test the model using the `load_model.ipynb` notebook.**
+3. **Test the model using the `load_model.ipynb` notebook.**
 
