@@ -38,7 +38,7 @@ To set up the project locally, follow these steps:
 ## Usage
 To use the model, execute the following steps:
    
-1. **Download .pt test data and put in the corresponding folder.**
+1. **Download test data and pretrained model checkpoints. Put in the corresponding folder.**
    
 2. **Please change all the path to your local path in `load_model.ipynb`.**
 
