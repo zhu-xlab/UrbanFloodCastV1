@@ -64,7 +64,7 @@ MSE = \frac{1}{n} \sum (y_{pred} - y_{obs})^2
 ```
 - **Lower RMSE/MSE indicates better model performance.**
 
-**Your value: `0.3927` → Low error, good performance.**
+**Test value: `0.3927` → Low error, good performance.**
 
 ---
 
@@ -80,7 +80,7 @@ NSE = 1 - \frac{\sum (y_{obs} - y_{pred})^2}{\sum (y_{obs} - \bar{y}_{obs})^2}
 - **NSE > 0.5** → Acceptable but needs improvement.
 - **NSE < 0** → Worse than using the mean.
 
-**Your value: `0.9371` → Excellent performance.**
+**Test value: `0.9371` → Excellent performance.**
 
 ---
 
@@ -95,7 +95,7 @@ r = \frac{\sum (y_{obs} - \bar{y}_{obs}) (y_{pred} - \bar{y}_{pred})}{\sqrt{\sum
 - **R = 0** → No correlation.
 - **R = -1** → Perfect negative correlation.
 
-**Your value: `0.9684` → Strong correlation between predictions and observations.**
+**Test value: `0.9684` → Strong correlation between predictions and observations.**
 
 ---
 
@@ -112,7 +112,7 @@ CSI = \frac{TP}{TP + FN + FP}
 - **CSI = 1** → Perfect prediction.
 - **CSI = 0** → Completely failed prediction.
 
-**Your values:**
+**Test values:**
 - **Test_csi_1 = `0.7291`**
 - **Test_csi_2 = `0.7807`**
 - **Test_csi_3 = `0.7942`**
@@ -130,17 +130,3 @@ CSI = \frac{TP}{TP + FN + FP}
 | Correlation (R) | Linear relationship strength | `0.9684` | Strong correlation between predicted and observed values |
 | CSI (x3) | Accuracy for flood/runoff prediction | `0.7291, 0.7807, 0.7942` | Good event detection (>0.7) |
 
----
-
-## Conclusion
-Your model performs **very well** with:
-- **Low prediction error** (Test RMSE/MSE)
-- **High accuracy** (NSE, Corr, CSI)
-- **Effective flood event prediction** (CSI > 0.7)
-
-### 🚀 Potential Improvements:
-1. **Hyperparameter tuning** (e.g., learning rate, model complexity).
-2. **Enhancing input data** (higher resolution DEM, improved rainfall data).
-3. **Trying advanced models** (e.g., LSTM for time-series runoff predictions).
-
-Feel free to contribute or suggest improvements! 🔥
