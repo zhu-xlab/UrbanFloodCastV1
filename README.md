@@ -40,9 +40,9 @@ To use the model, execute the following steps:
    
 1. **Download test data and pretrained model checkpoints. Put in the corresponding folder.**
    
-2. **Please change all the path to your local path in `load_model.ipynb`.**
+2. **Please change all the path to your local path in `load_model_v2.ipynb`.**
 
-3. **Test the model using the `load_model.ipynb` notebook.**
+3. **Test the model using the `load_model_v2.ipynb` notebook.**
 
 # Model Evaluation Metrics
 
@@ -51,9 +51,9 @@ This repository provides an overview of key evaluation metrics used in hydrologi
 ## Metrics Explained
 **General Lp Loss**:
    - For any positive real number \( p \), the Lp Loss is:
-     \[
+     ```math
      \text{Lp Loss} = \| \hat{y} - y \|_p = \left( \sum_{i=1}^n |\hat{y}_i - y_i|^p \right)^{1/p}
-     \]
+     ```
    - Characteristics: Flexible, can be tuned for specific tasks.
 
 ---
