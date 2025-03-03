@@ -14,11 +14,11 @@ UrbanFloodCastV2 is the second version repository for Inno_Maus project. This re
 UrbanFloodCastV2 leverages deep learning techniques to forecast urban flooding based on hydrology data. The project uses a variety of libraries and tools for data preprocessing, model building, and visualization.
 
 ## Data pixelization
-The pixelized data required for model training and evaluation can be downloaded from test_data folder in the following link:
+1. Directly use the processed data: The pixelized data required for model training and evaluation can be downloaded from test_data folder in the following link:
 
 [Pixelized Data](https://syncandshare.lrz.de/getlink/fiPWiw7f7nsxXXPBWVN7g/checkpoints)
 
-To get this data, you can process the data using the script provided in `process.ipynb`. This can help convert .txt to .tif files. Besides, `save_pt.ipynb` can help convert .tif to .pt files.
+2. Use .txt files to get .pt data, you can process the data using the script provided in `process.ipynb`. This can help convert .txt to .tif files. After processing, `save_pt.ipynb` can help convert .tif to .pt files. The txt files, DEM and ground truth can be found in test_data folder in [Raw Data](https://syncandshare.lrz.de/getlink/fiPWiw7f7nsxXXPBWVN7g/checkpoints)
 
 ## Model Training
 We prepared the pre-trained model checkpoints: [Checkpoints](https://syncandshare.lrz.de/getlink/fiPWiw7f7nsxXXPBWVN7g/checkpoints) Please download model.pt and put in the `save` folder.
@@ -49,6 +49,14 @@ To use the model, execute the following steps:
 This repository provides an overview of key evaluation metrics used in hydrological and machine learning models for flood/runoff prediction.
 
 ## Metrics Explained
+**General Lp Loss**:
+   - For any positive real number \( p \), the Lp Loss is:
+     \[
+     \text{Lp Loss} = \| \hat{y} - y \|_p = \left( \sum_{i=1}^n |\hat{y}_i - y_i|^p \right)^{1/p}
+     \]
+   - Characteristics: Flexible, can be tuned for specific tasks.
+
+---
 
 ### 1. Test (RMSE or MSE)
 This value likely represents either the **Root Mean Square Error (RMSE)** or **Mean Squared Error (MSE)**, which measure the deviation between predicted and observed values.
