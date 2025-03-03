@@ -44,6 +44,44 @@ To use the model, execute the following steps:
 
 3. **Test the model using the `load_model_v2.ipynb` notebook.**
 
+# DNO: Deep Neural Operator
+
+The **DNO (Deep Neural Operator)** is a neural network model designed for learning and predicting complex physical systems, particularly those involving high-dimensional data such as 3D fields. It combines spectral convolutions, pointwise operations, and multi-layer perceptrons (MLPs) to efficiently model spatial and temporal dependencies in data.
+
+---
+
+## Model Architecture
+
+The DNO model consists of the following key components:
+
+1. **Initial Fully Connected Layers**:
+   - `fc`: A linear layer mapping input features (8 dimensions) to a hidden state (16 dimensions).
+   - `fc0`: A linear layer mapping the hidden state (16 dimensions) to the input channels (10 dimensions) for the convolutional blocks.
+
+2. **Operator Blocks (`conv0`, `conv7`, `conv8`)**:
+   - Each operator block contains:
+     - **Spectral Convolution (`SpectralConv3d_Uno`)**: A spectral convolution layer for capturing global spatial dependencies in 3D data.
+     - **MLP (`MLP3d`)**: A multi-layer perceptron with 3D convolutions for pointwise feature transformations.
+       - `mlp1`: A 3D convolution layer mapping input channels (10 or 20) to intermediate channels (20).
+       - `mlp2`: A 3D convolution layer mapping intermediate channels (20) back to output channels (10).
+     - **Pointwise Operation (`pointwise_op_3D`)**: A 3D convolution layer for local feature transformations.
+     - **Normalization Layer (`InstanceNorm3d`)**: Instance normalization for stabilizing training.
+
+3. **Final Fully Connected Layers**:
+   - `fc1`: A linear layer mapping the final hidden state (20 dimensions) to an intermediate state (40 dimensions).
+   - `fc2`: A linear layer mapping the intermediate state (40 dimensions) to the output (3 dimensions).
+
+---
+
+## Model Parameters
+
+- **Complex Parameter Count**: 8,937,637
+- **Real Parameter Count**: 4,470,437
+
+The model uses a combination of real and complex-valued parameters, with the total number of trainable parameters being approximately 8.94 million (complex) or 4.47 million (real).
+
+---
+
 # Model Evaluation Metrics
 
 This repository provides an overview of key evaluation metrics used in hydrological and machine learning models for flood/runoff prediction.
