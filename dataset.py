@@ -33,9 +33,9 @@ import io
 import os
 import tifffile as tiff
 import torch.nn.functional as F
-zoom_factor=5
-width=int(3213/zoom_factor)
-height=int(2727/zoom_factor)
+zoom_factor=1
+width=int(3213/10)
+height=int(2727/10)
 ################################################################
 # Dataset class
 ################################################################
