@@ -21,7 +21,7 @@ UrbanFloodCastV2 leverages deep learning techniques to forecast urban flooding b
 Format of the .pt file: [height, width, time, channels]. Channels: H, U, V, runoff, DEM. Runoff and DEM are the two inputs. H, U, V are ground truth, represents water height and velocity.
 
 ## Model Training
-We prepared the pre-trained model checkpoints: [Checkpoints](https://syncandshare.lrz.de/getlink/fiPWiw7f7nsxXXPBWVN7g/checkpoints) Please download model.pt and put in the `save` folder.
+We prepared the pre-trained model checkpoints: [berlin1_model_new](https://syncandshare.lrz.de/getlink/fi2y4TcxCB9KVDgFzvddGW/Inno_MAUS) Password:Inno_MAUS. Please download model.pt and put in the `save` folder.
 
 ## Installation
 To set up the project locally, follow these steps:
